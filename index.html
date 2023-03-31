@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <!-- Definimos un fondo para la página -->
-  <body class="bg-[url('/images/background.png')] bg-cover w-100 bg-no-repeat">
+  <body class="bg-[url('./images/background.png')] bg-cover w-100 bg-no-repeat">
     <!-- Definimos la estructura básica de header, main y footer -->
     <!-- Donde encontramos el encabezado, en este caso, solo el navbar -->
-    <header>     
+    <header class="[&+*]:mt-20">     
       <!-- Definimos un navbar sticky con el mismo background en gradiente que el fondo de la página  -->
-        <nav class="bg-[url('/images/nav-bg.png')] sticky border-gray-200 px-2 py-1 sm:px-6 py-2 rounded ">
+        <nav class="bg-[url('./images/nav-bg.png')] w-full fixed top-0 z-10 border-gray-200 px-2 py-1 sm:px-6 py-2 rounded ">
             <div class="flex flex-wrap items-center justify-between mx-auto px-6 sm:py-2.5 rounded ">
               <!-- Separamos los items de la izquierda (Logo, Links de interes) con los botones (Registro e Inicio Sesión) -->
               <div class="flex items-center flex-shrink-0 text-gray-800 mr-6 ">
@@ -64,7 +64,7 @@
     <!-- Diferentes secciones de contenido de la página -->
     <main>
       <!-- Sección dedicada a la bienvenida de la página  -->
-      <section class="bg-none lg:bg-[url('/images/girl-1.png')] w-full h-auto bg-center bg-no-repeat bg-contain h-[80vh] lg:h-[85vh]">
+      <section class="bg-none lg:bg-[url('./images/girl-1.png')] w-full h-auto bg-center bg-no-repeat bg-contain h-[80vh] lg:h-[85vh]">
         <div class="grid h-full my-auto max-w-screen-xl w-full px-10 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="flex flex-col my-5 mx-auto self-items-center md:mr-auto place-self-center lg:col-span-7">
             <h1 class="max-w-2xl mb-4 text-[50px] text-center font-extrabold tracking-tight leading-none text-[#4A758E]">
