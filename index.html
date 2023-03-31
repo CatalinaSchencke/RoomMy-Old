@@ -8,53 +8,62 @@
     <meta name="keywords" content="HTML, CSS, TailwindCSS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoomMy</title>
+    <!-- Importamos TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vinculamos la hoja de estilo CSS -->
     <link rel="stylesheet" href="css/styles.css">
   </head>
+  <!-- Definimos un fondo para la página -->
   <body class="bg-[url('/images/background.png')] bg-cover w-100 bg-no-repeat">
+    <!-- Definimos la estructura básica de header, main y footer -->
+    <!-- Donde encontramos el encabezado, en este caso, solo el navbar -->
     <header>     
+      <!-- Definimos un navbar sticky con el mismo background en gradiente que el fondo de la página  -->
         <nav class="bg-[url('/images/nav-bg.png')] sticky border-gray-200 px-2 py-1 sm:px-6 py-2 rounded dark:bg-gray-900">
             <div class="flex flex-wrap items-center justify-between mx-auto px-6 sm:py-2.5 rounded dark:bg-gray-900">
-                <div class="flex items-center flex-shrink-0 text-gray-800 mr-6 dark:text-white">
-                    <a href="/" class="flex items-center">
-                        <img src="images/Logo.png" class="h-6 mr-5 sm:h-9" alt="RoomMy Logo" />
-                    </a>
-                    <div class="items-center  hidden w-full lg:flex md:w-auto md:order-1" id="navbar-cta">
-                        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 md:dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
-                                <a href="#how-it-works" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700   dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                                  ¿Cómo funciona?
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                                  Sobre Nosotros
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                                  Contacto
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex md:order-2">
-                    <button type="button" class="hidden md:block mr-3 text-gray-500 hover:text-[#5DA8BD] focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-0 py-2.5 text-center px-5 mr-0  dark:focus:ring-[#4A758E]">
-                      Registrarse
-                    </button>
-                    <button type="button" class=" rounded-full drop-shadow-[5px_6px_5px_rgba(0,0,0,0.35)] text-white bg-[#4A758E] hover:bg-[#5DA8BD]  focus:outline-none focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-[#4A758E]">
-                      Iniciar Sesión
-                    </button>
-                    <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg ml-3 lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                </button>
-                </div>
+              <!-- Separamos los items de la izquierda (Logo, Links de interes) con los botones (Registro e Inicio Sesión) -->
+              <div class="flex items-center flex-shrink-0 text-gray-800 mr-6 dark:text-white">
+                  <a href="/" class="flex items-center">
+                      <img src="images/Logo.png" class="h-6 mr-5 sm:h-9" alt="RoomMy Logo" />
+                  </a>
+                  <div class="items-center  hidden w-full lg:flex md:w-auto md:order-1" id="navbar-cta">
+                      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 md:dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                          <li>
+                              <a href="#how-it-works" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700   dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                ¿Cómo funciona?
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                Sobre Nosotros
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                Contacto
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="flex md:order-2">
+                  <button type="button" class="hidden md:block mr-3 text-gray-500 hover:text-[#5DA8BD] focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-0 py-2.5 text-center px-5 mr-0  dark:focus:ring-[#4A758E]">
+                    Registrarse
+                  </button>
+                  <button type="button" class=" rounded-full drop-shadow-[5px_6px_5px_rgba(0,0,0,0.35)] text-white bg-[#4A758E] hover:bg-[#5DA8BD]  focus:outline-none focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-[#4A758E]">
+                    Iniciar Sesión
+                  </button>
+                  <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg ml-3 lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+              </div>
             </div>
         </nav>
     </header> 
+    <!-- Diferentes secciones de contenido de la página -->
     <main>
+      <!-- Sección dedicada a la bienvenida de la página  -->
       <section class="bg-none lg:bg-[url('/images/girl-1.png')] w-full h-auto bg-center bg-no-repeat bg-contain h-[80vh] lg:h-[85vh]">
         <div class="grid h-full my-auto max-w-screen-xl w-full px-10 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="flex flex-col my-5 mx-auto self-items-center md:mr-auto place-self-center lg:col-span-7">
@@ -73,6 +82,7 @@
           </div>               
         </div>
       </section>
+      <!-- Sección dedicada a los servicios que ofrece la página  -->
       <section class="flex flex-col flex-wrap gap-y-2 lg:flex lg:flex-row lg:justify-center lg:gap-x-8 lg:mx-2 lg:mb-8">
         <div class=" lg:w-[25%] lg:h-auto  lg:relative grid justify-items-center">
           <img src="images/Dormitorio.jpg" alt="" class="hidden lg:block rounded-[40px]">
@@ -93,6 +103,7 @@
           </button>
         </div>
       </section>
+      <!-- Sección dedicada a explicar cómo funciona cada tipo de perfil de la página (solo descrita el perfil Roomie) -->
       <section id="how-it-works">
         <div class="py-24 sm:py-32">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -155,6 +166,7 @@
           </div>
         </div>
       </section>
+      <!-- Sección Sobre Nosotros (idea general)-->
       <section id="about">
         <div class="mx-auto grid  grid-cols-1 gap-x-4 gap-y-10  lg:mx-20  lg:grid-cols-2 px-10">
           <div class="grid grid-cols-1 w-[80%]">
@@ -172,6 +184,7 @@
           </div>
         </div>
       </section>
+      <!-- Sección Contacto (idea general) -->
       <section id="contact">
         <div class="flex justify-center mt-20 mb-14">
           <div class="bg-gray-100  h-[400px] w-[85%] flex justify-center items-center ">
@@ -180,6 +193,7 @@
         </div>
       </section>
     </main>   
+    <!-- Idea general de como será el footer -->
     <footer class="h-32 grid content-center mb-9">
       <div class="flex items-center justify-between mx-20 ">
         <div class="self-center">
