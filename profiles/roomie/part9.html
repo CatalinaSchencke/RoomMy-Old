@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Catalina Schencke">
+    <meta name="description" content="Maquetación HTML5, CSS3 y TailwindCSS  de RoomMy">
+    <meta name="keywords" content="HTML, CSS, TailwindCSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomMy - Registro</title>
+    <!-- Importamos TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vinculamos la hoja de estilo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <!-- Definimos un fondo para la página -->
+  <body class="bg-[url('./images/background.png')] bg-cover w-100 bg-no-repeat">
+    <!-- Definimos la estructura básica de header, main y footer -->
+    <!-- Donde encontramos el encabezado, en este caso, solo el navbar -->
+    <header class="[&+*]:mt-32">     
+      <!-- Definimos un navbar sticky conbackground blanco-->
+        <nav class="bg-white w-full fixed top-0 z-10 border-gray-200 px-2 py-1 sm:px-6 py-2 rounded ">
+            <div class="flex flex-wrap items-center justify-center mx-auto px-6 sm:py-2.5 rounded ">
+                  <a href="/" class="flex items-center">
+                      <img src="../../images/Logo.png" class="h-6 mr-5 sm:h-14" alt="RoomMy Logo" />
+                  </a>
+            </div>
+        </nav>
+    </header> 
+    <main>
+        <section class="mb-10 mx-20">
+            <div class="grid gap-4 grid-cols-3 px-10">
+                <div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="h-32 grid content-center mb-9">
+      <div class="flex items-center justify-between mx-20 ">
+        <div class="self-center"> 
+          <p class="text-xl font-semibold text-gray-400">
+            Texto
+          </p>
+          <p class="text-xl font-semibold text-gray-400">
+            Texto
+          </p>
+          <p class="text-xl font-semibold text-gray-400">
+            Texto
+          </p>
+        </div>
+        <div>
+          <img src="../../images/Logo.png" class="h-6 mr-5 sm:h-20" alt="RoomMy Logo" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
