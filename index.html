@@ -149,7 +149,7 @@
                 </div> 
               </div>
               <div>
-              <div class="grid grid-cols-2 grid-rows-2 place-items-center gap-x-4  w-auto">
+              <div class="grid grid-cols-2 grid-rows-2 place-items-center gap-x-4 bg-white/[.75] rounded-t-xl px-5  w-auto mb-6">
                 <div class="mr-5 ">
                   <p class="text-right">
                     Deberás crear un perfil indicando tus preferencias de compañero de arriendo.Considera que será con quien dividirás costos y tu hogar.
@@ -176,32 +176,50 @@
           </div>
         </div>
       </section>
-      <!-- Sección Sobre Nosotros (idea general)-->
       <section id="about">
         <div class="mx-auto grid  grid-cols-1 gap-x-4 gap-y-10  lg:mx-20  lg:grid-cols-2 px-10">
           <div class="grid grid-cols-1 w-[80%]">
-            <h1 class="  mb-10 text-[50px] text-left font-extrabold tracking-tight leading-none text-[#4A758E] sm:text-[60px]">
+            <h2 class="mb-10 text-[50px] text-left font-extrabold tracking-tight leading-none text-[#4A758E] sm:text-[60px]">
               Sobre Nosotros  
-            </h1>
+            </h2>
             <p class="text-xl">
               Somos personas independientes que buscamos mejorar las oportunidades de las personas para acceder a estudios y trabajos, donde se les permita buscar roommates y lugares que se ajusten a sus preferencias, como por ejemplo un género específico donde se sientan cómodos y validados. 
               <br> <br>
               Queremos que los usuarios tengan la posibilidad de conocer más sobre sus posibles roommates y decidir si son compatibles con sus necesidades.
             </p>
           </div>
-          <div class="bg-gray-100 w-full h-[300px] lg:h-auto flex items-center justify-center ">
-            <h3 class="font-extrabold text-3xl">Imagen</h3>
+          <div class="w-full h-[300px] lg:h-auto flex items-center justify-center">
+            <img src="./images/perrito.jpg" alt="perrito" class="rounded-xl">
           </div>
         </div>
       </section>
       <!-- Sección Contacto (idea general) -->
       <section id="contact">
-        <div class="flex justify-center mt-20 mb-14">
-          <div class="bg-gray-100  h-[400px] w-[85%] flex justify-center items-center ">
-            <p class="font-extrabold text-3xl text-center  self-center">Contacto</p>
+        <div class="mt-20 mb-14">
+          <div class="bg-white">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+              <h2 class="mb-4 text-[50px] text-center font-extrabold leading-none text-[#4A758E] sm:text-[60px]">
+                Contáctanos 
+              </h2>
+              <p class="mb-8 lg:mb-12 font-light text-center text-gray-500 text-xl sm:text-2xl">¿Necesitas ayuda para encontrar un roommate? ¡Háznoslo saber!</p>
+              <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 font-medium text-gray-900">Tu email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="ejemplo@gmail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 font-medium text-gray-900">Asunto</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="¡Déjanos saber como te podemos ayudar!" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 font-medium text-gray-900">Tu mensaje</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Deja un comentario..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 font-medium text-center text-white rounded-lg sm:w-fit bg-[#4A758E] hover:bg-[#5DA8BD] focus:ring-4 focus:ring-primary-300">Enviar mensaje</button>
+              </form>
+            </div>
           </div>
         </div>
-      </section>
     </main>   
     <!-- Idea general de como será el footer -->
     <footer class="h-32 grid content-center mb-9">
