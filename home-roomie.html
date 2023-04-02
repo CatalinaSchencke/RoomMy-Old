@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Catalina Schencke">
+    <meta name="description" content="Maquetación HTML5, CSS3 y TailwindCSS  de RoomMy">
+    <meta name="keywords" content="HTML, CSS, TailwindCSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomMy</title>
+    <!-- Importamos TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vinculamos la hoja de estilo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <!-- Definimos un fondo para la página -->
+  <body class="bg-[url('./images/background.png')] bg-cover w-100 bg-no-repeat">
+    <!-- Definimos la estructura básica de header, main y footer -->
+    <!-- Donde encontramos el encabezado, en este caso, solo el navbar -->
+    <header class="[&+*]:mt-32">     
+      <!-- Definimos un navbar sticky con el mismo background en gradiente que el fondo de la página  -->
+        <nav class="bg-[url('./images/nav-bg.png')] w-full fixed top-0 z-10 border-gray-200 px-2 py-1 sm:px-6 py-2 rounded ">
+            <div class="flex flex-wrap items-center justify-between mx-auto px-6 sm:py-2.5 rounded ">
+              <!-- Separamos los items de la izquierda (Logo, Links de interes) con los botones (Registro e Inicio Sesión) -->
+              <div class="flex items-center flex-shrink-0 text-gray-800 mr-6 ">
+                  <a href="index.html" class="flex items-center">
+                      <img src="images/Logo.png" class="h-6 mr-5 sm:h-9" alt="RoomMy Logo" />
+                  </a>
+                  <div class="items-center  hidden w-full lg:flex md:w-auto md:order-1" id="navbar-cta">
+                      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 ">
+                          <li>
+                              <a href="#how-it-works" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
+                                ¿Cómo funciona?
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
+                                Sobre Nosotros
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
+                                Contacto
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="flex items-center md:order-2 gap-x-3">
+                <p class=" text-gray-500 font-semibold">Jane Doe</p>
+                <img src="./images/rectangle-vertical-gray.svg" class="h-auto" alt="">
+                <p class=" text-gray-600 font-semibold">Roomie</p>
+                <div class="border-4 w-[65px] h-[65px] overflow-hidden border-gray-200 rounded-full inline-block bg-[#F1D6A0]">
+                  <img class="h-[70px] object-cover" src="./../../images/mujer.png" alt=""/>
+                </div>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg ml-3 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-cta" aria-expanded="false">
+                <span class="sr-only">Open options</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+              </div>
+            </div>
+        </nav>
+    </header> 
+    <!-- Diferentes secciones de contenido de la página -->
+    <main>
+      <div class="flex flex-col mx-14 gap-x-0 gap-y-10">
+        <!-- Titulo bienvenida -->
+        <h1 class="text-4xl font-bold text-gray-800 ">¡Bienvenida de vuelta, Jane Doe!</h1>
+        <!-- Sección de recomendaciones de roomies-->
+        <div>
+          <p class="text-2xl font-bold text-gray-800 mb-4">Roomies recomendados</p>
+          <div class="grid grid-flow-row gap-y-4 lg:grid-cols-4">
+            <div class="w-full lg:max-w-sm p-6 grid grid-cols-1 bg-white border border-gray-200 rounded-lg shadow ">
+              <button type="button" class="inline-flex font-medium  justify-end text-gray-500 hover:text-[#5DA8BD]  rounded-lg text-md mr-0  ">
+                Descartar
+              </button>
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Alan Doe</h5>
+              </a>
+              <ul class="list-image-[url('./images/checkmark.png')] list-inside ml-0 mb-6">
+                <li>Hombre</li>
+                <li>Acepta mascotas</li>
+                <li>Presupuesto similar</li>
+                <li>Misma búsqueda de localización</li>
+              </ul>
+              <div class="inline-flex justify-end">
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E] ">
+                  Enviar solicitud
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+            <div class="w-full lg:max-w-sm p-6 grid grid-cols-1 bg-white border border-gray-200 rounded-lg shadow ">
+              <button type="button" class="inline-flex justify-end text-gray-500 hover:text-[#5DA8BD] font-medium  rounded-lg text-md mr-0  ">
+                Descartar
+              </button>
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Jamie Doe</h5>
+              </a>
+              <ul class="list-image-[url('./images/checkmark.png')] list-inside ml-0 mb-6">
+                <li>No binario</li>
+                <li>Tiene una mascota</li>
+                <li>Presupuesto similar</li>
+                <li>2/3 localidades similares</li>
+              </ul>
+              <div class="inline-flex justify-end">
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white rounded-lg bg-[#2596be] hover:bg-[#4A758E]">
+                  Enviar solicitud
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+            <div class="w-full lg:max-w-sm p-6 grid grid-cols-1 bg-white border border-gray-200 rounded-lg shadow ">
+              <button type="button" class="inline-flex justify-end text-gray-500 hover:text-[#5DA8BD]  font-medium rounded-lg text-md mr-0  ">
+                Descartar
+              </button>
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Mary Doe</h5>
+              </a>
+              <ul class="list-image-[url('./images/checkmark.png')] list-inside ml-0 mb-6">
+                <li>Mujer</li>
+                <li>Estudiante</li>
+                <li>Presupuesto similar</li>
+                <li>Misma búsqueda de localización</li>
+              </ul>
+              <div class="inline-flex justify-end">
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E]">
+                  Enviar solicitud
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+            <div class="w-full lg:max-w-sm p-6 grid grid-cols-1 bg-white border border-gray-200 rounded-lg shadow ">
+              <button type="button" class="inline-flex justify-end text-gray-500 hover:text-[#5DA8BD] font-medium rounded-lg text-md mr-0  ">
+                Descartar
+              </button>
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Elizabeth Doe</h5>
+              </a>
+              <ul class="list-image-[url('./images/checkmark.png')] list-inside ml-0 mb-6">
+                <li>Mujer</li>
+                <li>Busca con 2 personas más</li>
+                <li>Presupuesto similar</li>
+                <li>2/3 localidades similares</li>
+              </ul>
+              <div class="inline-flex justify-end">
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white rounded-lg bg-[#2596be] hover:bg-[#4A758E]">
+                  Enviar solicitud
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-flow-row lg:grid-cols-2 gap-4">
+          <!-- Sección de Solicitudes de roomies enviadas -->
+          <div>
+            <p class="text-2xl font-bold text-gray-800 mb-4">Solicitudes enviadas</p>
+            <div class="grid grid-flow-row lg:grid-cols-2 gap-y-2">
+              <div class="w-[100%] lg:max-w-sm  p-2 bg-white border border-gray-200 rounded-lg flex flex-row items-center gap-x-2 shadow ">
+                <div class="border-4 w-[75px] h-[75px] overflow-hidden border-gray-200 rounded-full inline-block bg-[#F1D6A0]">
+                  <img class="h-[80px] object-cover" src="./../../images/mujer.png" alt=""/>
+                </div>
+                <p class=" text-gray-500 text-2xl font-semibold">Jane Doe</p>
+              </div>
+              <div class="w-[100%] lg:max-w-sm  p-2 bg-white border border-gray-200 rounded-lg flex flex-row items-center gap-x-2 shadow ">
+                <div class="border-4 w-[75px] h-[75px] overflow-hidden border-gray-200 rounded-full inline-block bg-[#F1D6A0]">
+                  <img class="h-[80px] object-cover" src="./../../images/mujer.png" alt=""/>
+                </div>
+                <p class=" text-gray-500 text-2xl font-semibold">Jane Doe</p>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Sección de Solicitudes de roomies recibidas -->
+          <div>
+            <p class="text-2xl font-bold text-gray-800 mb-4">Solicitudes recibidas</p>
+            <div class="grid grid-flow-row lg:grid-cols-2 gap-y-2">
+              <div class="w-[100%] lg:max-w-sm  p-2  justify-between bg-white border border-gray-200 rounded-lg flex flex-row items-center gap-x-2 shadow ">
+                <div class="inline-flex items-center gap-x-4">
+                  <div class="border-4 w-[75px] h-[75px] overflow-hidden border-gray-200 rounded-full inline-block bg-[#F1D6A0]">
+                    <img class="h-[80px] object-cover" src="./../../images/mujer.png" alt=""/>
+                  </div>
+                  <p class=" text-gray-500 text-2xl font-semibold">Jane Doe</p>
+                </div>
+                <a href="#" class="inline-flex px-3 mr-4 py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E] ">
+                  Aceptar
+                </a>
+              </div>
+              <div class="w-[100%] lg:max-w-sm  p-2  justify-between bg-white border border-gray-200 rounded-lg flex flex-row items-center gap-x-2 shadow ">
+                <div class="inline-flex items-center gap-x-4">
+                  <div class="border-4 w-[75px] h-[75px] overflow-hidden border-gray-200 rounded-full inline-block bg-[#F1D6A0]">
+                    <img class="h-[80px] object-cover" src="./../../images/mujer.png" alt=""/>
+                  </div>
+                  <p class=" text-gray-500 text-2xl font-semibold">Jane Doe</p>
+                </div>
+                <a href="#" class="inline-flex px-3 mr-4 py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E] ">
+                  Aceptar
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div>
+          <!-- Sección de propiedades recomendadas -->
+          <p class="text-2xl font-bold text-gray-800 mb-4">Propiedades recomendadas</p>
+          <!-- Card de propiedades -->
+          <div class="grid grid-flow-row gap-y-4 lg:grid-cols-4 ">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+              <a href="#">
+                  <img class="rounded-t-lg" src="./images/casa.jpg" alt="" />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Propiedad 1</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni ut adipisci laboriosam vitae quae ex iure amet pariatur sunt, optio perferendis doloremque molestias magnam. Qui odit doloribus soluta iste!</p>
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E] ">
+                  Más información
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+              <a href="#">
+                  <img class="rounded-t-lg" src="./images/casa.jpg" alt="" />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Propiedad 1</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni ut adipisci laboriosam vitae quae ex iure amet pariatur sunt, optio perferendis doloremque molestias magnam. Qui odit doloribus soluta iste!</p>
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E] ">
+                  Más información
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <a href="#">
+                  <img class="rounded-t-lg" src="./images/casa.jpg" alt="" />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Propiedad 1</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni ut adipisci laboriosam vitae quae ex iure amet pariatur sunt, optio perferendis doloremque molestias magnam. Qui odit doloribus soluta iste!</p>
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E] ">
+                  Más información
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+              <a href="#">
+                  <img class="rounded-t-lg" src="./images/casa.jpg" alt="" />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Propiedad 1</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni ut adipisci laboriosam vitae quae ex iure amet pariatur sunt, optio perferendis doloremque molestias magnam. Qui odit doloribus soluta iste!</p>
+                <a href="#" class=" inline-flex items-center px-3 w-[45%] py-2 text-sm font-medium text-center text-white  rounded-lg bg-[#2596be] hover:bg-[#4A758E] ">
+                  Más información
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>   
+    <!-- Idea general de como será el footer -->
+    <footer class="h-40 mt-10 grid bg-white content-center">
+      <div class="flex items-center justify-between mx-20 ">
+        <div class="self-center">
+          <p class="text-xl font-semibold text-gray-400">
+            Texto
+          </p>
+          <p class="text-xl font-semibold text-gray-400">
+            Texto
+          </p>
+          <p class="text-xl font-semibold text-gray-400">
+            Texto
+          </p>
+        </div>
+        <div>
+          <img src="images/Logo.png" class="h-6 mr-5 sm:h-20" alt="RoomMy Logo" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
