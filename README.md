@@ -39,5 +39,8 @@ Se mostrarán en color celeste aquellas funcionalidades que se han realizado en 
 ## Maquetación
 El diseño fue realizado en Figma, puedes acceder mediante [este link](https://www.figma.com/file/Wnk55t9fBHhpt2tAZjOA5P/RoomMy?node-id=262%3A86&t=jfNekj3H2HKhJAZ2-1).
 
+## Integrantes
+- Catalina Schencke
+
 
 
