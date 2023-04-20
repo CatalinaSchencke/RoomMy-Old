@@ -8,52 +8,49 @@
     <meta name="keywords" content="HTML, CSS, TailwindCSS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoomMy</title>
-    <!-- Importamos TailwindCSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Vinculamos la hoja de estilo CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="/dist/output.css" rel="stylesheet">
   </head>
   <!-- Definimos un fondo para la página -->
-  <body class="bg-[url('./images/background.png')] bg-cover w-100 bg-no-repeat">
+  <body class="bg-[url('./../src/assets/background.png')] bg-cover w-100 bg-no-repeat">
     <!-- Definimos la estructura básica de header, main y footer -->
     <!-- Donde encontramos el encabezado, en este caso, solo el navbar -->
     <header class="[&+*]:mt-20">     
       <!-- Definimos un navbar sticky con el mismo background en gradiente que el fondo de la página  -->
-        <nav class="bg-[url('./images/nav-bg.png')] w-full fixed top-0 z-10 border-gray-200 px-2 py-1 sm:px-6 py-2 rounded ">
-            <div class="flex flex-wrap items-center justify-between mx-auto px-6 sm:py-2.5 rounded ">
+        <nav class="bg-[url('./../src/assets/nav-bg.png')] w-full fixed top-0 z-10 border-gray-200  py-0 px-2 sm:px-6 sm:py-1 ">
+            <div class="flex flex-wrap items-center justify-between mx-auto  px-6 sm:py-1 lg:py-0 rounded ">
               <!-- Separamos los items de la izquierda (Logo, Links de interes) con los botones (Registro e Inicio Sesión) -->
               <div class="flex items-center flex-shrink-0 text-gray-800 mr-6 ">
                   <a href="index.html" class="flex items-center">
-                      <img src="images/Logo.png" class="h-6 mr-5 sm:h-9" alt="RoomMy Logo" />
+                      <img src="./assets/Logo.png" class="h-4 mr-5 sm:h-9" alt="RoomMy Logo" />
                   </a>
                   <div class="items-center  hidden w-full lg:flex md:w-auto md:order-1" id="navbar-cta">
-                      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 ">
+                      <ul class="flex flex-col p-4 mt-4 border text-sm border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 ">
                           <li>
-                              <a href="#how-it-works" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
+                              <a href="#how-it-works" class="block  pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
                                 ¿Cómo funciona?
                               </a>
                           </li>
                           <li>
-                              <a href="#about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
+                              <a href="#about" class="block pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
                                 Sobre Nosotros
                               </a>
                           </li>
                           <li>
-                              <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
+                              <a href="#contact" class="block pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5DA8BD] md:p-0">
                                 Contacto
                               </a>
                           </li>
                       </ul>
                   </div>
               </div>
-              <div class="flex md:order-2">
+              <div class="flex md:order-2 items-center">
                 <a href="sign-up.html">
-                  <button type="button" class="hidden md:block mr-3 text-gray-500 hover:text-[#5DA8BD] focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-0 py-2.5 text-center px-5 mr-0  ">
+                  <button type="button" class="hidden md:block mr-3 text-gray-500 hover:text-[#5DA8BD] focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2 text-center px-5   ">
                     Registrarse
                   </button>
                 </a>
                 <a href="sign-in.html">
-                  <button type="button" class=" rounded-full drop-shadow-[5px_6px_5px_rgba(0,0,0,0.35)] text-white bg-[#4A758E] hover:bg-[#5DA8BD]  focus:outline-none focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+                  <button type="button" class=" rounded-full  text-white bg-[#4A758E] hover:bg-[#5DA8BD]  focus:outline-none font-medium  text-sm px-5 py-2 text-center mr-3 md:mr-0">
                     Iniciar Sesión
                   </button>
                 </a>
@@ -68,7 +65,7 @@
     <!-- Diferentes secciones de contenido de la página -->
     <main>
       <!-- Sección dedicada a la bienvenida de la página  -->
-      <section class="bg-none lg:bg-[url('./images/girl-1.png')] w-full h-auto bg-center bg-no-repeat bg-contain h-[80vh] lg:h-[85vh]">
+      <section class="bg-none lg:bg-[url('./../src/assets/girl-1.png')] w-full  bg-center bg-no-repeat bg-contain h-[80vh] lg:h-[85vh]">
         <div class="grid h-full my-auto max-w-screen-xl w-full px-10 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="flex flex-col my-5 mx-auto self-items-center md:mr-auto place-self-center lg:col-span-7">
             <h1 class="max-w-2xl mb-4 text-[50px] text-center font-extrabold tracking-tight leading-none text-[#4A758E]">
@@ -89,7 +86,7 @@
       <!-- Sección dedicada a los servicios que ofrece la página  -->
       <section class="flex flex-col flex-wrap gap-y-2 lg:flex lg:flex-row lg:justify-center lg:gap-x-8 lg:mx-2 lg:mb-8">
         <div class=" lg:w-[25%] lg:h-auto  lg:relative grid justify-items-center">
-          <img src="images/Dormitorio.jpg" alt="" class="hidden lg:block rounded-[40px]">
+          <img src="./assets/Dormitorio.jpg" alt="" class="hidden lg:block rounded-[40px]">
           <a href="profiles/offer/part1.html" class="drop-shadow-md flex justify-center lg:absolute lg:top-[82%] bg-white w-[80%] rounded-full lg:py-2" >
             <button class="text-center  lg:font-medium">
               Arriendo una <b>habitación</b>
@@ -97,7 +94,7 @@
           </a>
         </div>
         <div class=" lg:w-[25%] lg:h-auto lg:relative grid justify-items-center">
-          <img src="images/Roomie.jpg" alt="" class="hidden lg:block rounded-[40px]">
+          <img src="./assets/Roomie.jpg" alt="" class="hidden lg:block rounded-[40px]">
           <a href="profiles/roomie/part1.html" class="drop-shadow-md flex justify-center lg:absolute lg:top-[82%] bg-white w-[80%] rounded-full lg:py-2" >
             <button class="text-center lg:font-medium">
               Busco <b>Roomie</b>
@@ -105,7 +102,7 @@
           </a>
         </div>
         <div class=" lg:w-[25%] lg:h-auto lg:relative grid justify-items-center">
-          <img src="images/Propiedad.jpg" alt="" class="hidden lg:block rounded-[40px]">
+          <img src="./assets/Propiedad.jpg" alt="" class="hidden lg:block rounded-[40px]">
           <a href="profiles/offer/part1.html" class="drop-shadow-md flex justify-center lg:absolute lg:top-[82%] bg-white w-[80%] rounded-full lg:py-2" >
             <button class="text-center lg:font-medium">
               Arriendo una <b>Propiedad</b>
@@ -156,10 +153,10 @@
                   </p>
                 </div>
                 <div class="">
-                  <img class="object-cover h-[300px] w-full" src="images/Roomie-1.png" alt="">
+                  <img class="object-cover h-[300px] w-full" src="./assets/Roomie-1.png" alt="">
                 </div>
                 <div class="">
-                  <img src="images/Roomie-2.png" alt="" class="object-cover h-[200px] w-full rounded-[40px]">
+                  <img src="./assets/Roomie-2.png" alt="" class="object-cover h-[200px] w-full rounded-[40px]">
                 </div>
                 <div class="ml-5">
                   <p class="text-left">
@@ -170,7 +167,7 @@
               </div>
               <div class="grid justify-center ">
                 <p class="font-medium text-xl justify-self-center">Si aceptas una solicitud...</p>
-                <img src="images/RoomMy-match.png"  class="h-auto w-full object-contain" alt="">
+                <img src="./assets/RoomMy-match.png"  class="h-auto w-full object-contain" alt="">
               </div>
             </div>
           </div>
@@ -189,7 +186,7 @@
             </p>
           </div>
           <div class="w-full h-[300px] lg:h-auto flex items-center justify-center">
-            <img src="./images/perrito.jpg" alt="perrito" class="rounded-xl">
+            <img src="./assets/perrito.jpg" alt="perrito" class="rounded-xl">
           </div>
         </div>
       </section>
@@ -236,7 +233,7 @@
           </p>
         </div>
         <div>
-          <img src="images/Logo.png" class="h-6 mr-5 sm:h-20" alt="RoomMy Logo" />
+          <img src="./assets/Logo.png" class="h-6 mr-5 sm:h-20" alt="RoomMy Logo" />
         </div>
       </div>
     </footer>
