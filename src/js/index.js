@@ -5,15 +5,21 @@ accordionButtons.forEach(button => {
 
     button.addEventListener('click', function () {
         let contentId = button.dataset.accordionTarget;
-        let sourceContent = button.dataset.accordionSource;
+        let sourceContentId = button.dataset.accordionSource;
+        let svgId = button.dataset.accordionSvg;
 
         closeOpenAccordions(contentId);        
 
         let accordionContent = document.querySelector(contentId);
-        let sourceText = document.querySelector(sourceContent).innerHTML;
+        let sourceText = document.querySelector(sourceContentId).innerHTML;
+        let svgArrow = document.querySelector(svgId);
+
+        console.log(svgArrow);
+
         activeContent.innerHTML = sourceText;
         accordionContent.classList.toggle("max-h-0");
         accordionContent.classList.toggle("max-h-[200px]");
+        svgArrow.classList.toggle("-rotate-180");
     });
 });
 
