@@ -84,7 +84,7 @@ form.sign-in-form {
 }
 .input-field {
   max-width: 380px;
-  width: 380px;
+  width: 70vw;
   background-color: #f0f0f0;
   
   margin-bottom: 40px;
@@ -333,6 +333,7 @@ header{
   z-index: 1;
 }
 
+
 .contenedor.sign-up-mode .right-panel .image,
 .contenedor.sign-up-mode .right-panel .content {
   transform: translateX(0%);
@@ -346,7 +347,7 @@ header{
   pointer-events: all;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 870px){
   
   .signin-signup {
     width: 100%;
@@ -359,28 +360,33 @@ header{
   .contenedor.sign-up-mode .signin-signup {
     left: 50%;
   }
-
+  .signin-signup{
+    top:85%;
+  }
+  .contenedor.sign-up-mode .signin-signup{
+    top: 50%;
+  }
 
   .panels-container {
     grid-template-columns: 1fr;
-    position: static;
-
   }
 
   .panel {
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     padding: 2.5rem 8%;
     grid-column: 1 / 2;
   }
 
   .right-panel {
-    grid-row: 3 / 4;
+    align-self: end;
+    padding-top: 3.2rem;
+    padding-bottom: 2rem;
   }
 
   .left-panel {
-    grid-row: 1 / 2;
+    align-self: start;
+    padding-top:20px;
   }
 
   .image {
@@ -389,16 +395,18 @@ header{
  
 
   .panel .content {
-    padding-right: 15%;
+    padding: 0.5rem 1rem;
     transition: transform 0.9s ease-in-out;
     transition-delay: 0.8s;
-    margin-top:7.5rem;
+  }
+  .content-login{
+    padding-top:60px;
+
   }
 
-  .panel h3 {
-    
+  .panel h3 { 
     font-size: 1rem;
-    
+    margin-bottom: 10px;
   }
 
   .panel p {
@@ -412,97 +420,66 @@ header{
     height: 35px;
     font-size: 0.7rem;
   }
-
+  .contenedor{
+    padding: 1.5rem;
+  }
   .contenedor:before {
     width: 1500px;
     height: 800px;
     transform: translateX(-50%);
+    bottom: 70%;
     left: 50%;
-    bottom: 35%;
     right: initial;
     top: initial;
     transition: 2s ease-in-out;
+    
   }
 
   .contenedor.sign-up-mode:before {
     transform: translate(-50%, 100%);
-    bottom: 25%;
-    right: initial;
+    bottom: 16%;
+    left: 50%;
   }
 
-  .contenedor.sign-up-mode .left-panel .image,
-  .contenedor.sign-up-mode .left-panel .content {
-    transform: translateY(-100px);
-  }
-
-  .contenedor.sign-up-mode .right-panel .image,
-  .contenedor.sign-up-mode .right-panel .content {
-    transform: translateY(0px);
-  }
-
-  .right-panel .image,
-  .right-panel .content {
-    transform: translateY(100px);
-  }
   .contenedor .panels-container{
     margin-top: 2rem;
   }
-  .contenedor.sign-up-mode .signin-signup {
+
+  .contenedor.sign-up-mode .signin-signup .sign-up-form {
     top: 0%;
-    transform: translate(-50%, 0);
-  }
-  .panels-container .contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 570px) {
-  form {
-    padding: 0 1.5rem;
+    transform: translate(0, 25%);
   }
 
-  .image {
-    display: none;
-  }
-  .panel .content {
-    padding: 0.5rem 1rem;
-  }
-  .panel .left-panel{
-    margin-top: 20rem;
-  }
-  .contenedor {
-    padding: 1.5rem;
+  .content-register{
+    margin-bottom: 40%;
   }
 
-  .contenedor:before {
-    bottom: 40%;
-    left: 50%;
-  }
-  .contenedor.sign-up-mode .left-panel {
-    pointer-events: none;
-  }
-  
-  .contenedor.sign-up-mode .right-panel {
-    pointer-events: all;
-  }
-  .contenedor.sign-up-mode::before {
-    bottom: 30%;
-    left: 50%;
-  }
-  .contenedor.sign-up-mode .panels-container .panel.left-panel{
+  .contenedor.sign-up-mode .panels-container .panel.left-panel {
     opacity: 0%;
   }
+
   .contenedor.sign-up-mode .panels-container .panel.right-panel{
     opacity: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-self: center;
   }
-    .contenedor .panels-container .panel.right-panel{
-        opacity: 0%;
-    }
-    .contenedor .panels-container .panel.left-panel{
-        opacity: 100%;
-      }
-      
-  
+
+  .contenedor.sign-up-mode .panels-container .panel.right-panel .content-login p{
+    display:none;
+  }
+
+  .contenedor .panels-container .panel.left-panel .content-register p{
+    display:none;
+  }
+
+  .contenedor .panels-container .panel.right-panel{
+    opacity: 0%;
+  }
+
+  .contenedor .panels-container .panel.left-panel{
+    opacity: 100%;
+  }
+
 }
+
