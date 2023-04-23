@@ -16,7 +16,7 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.contenedor {
     width: 100%;
     background-color: #fff;
     height: 100vh;
@@ -202,7 +202,7 @@ form.sign-in-form {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.container:before {
+.contenedor:before {
   content: "";
   position: absolute;
   height: 2000px;
@@ -309,40 +309,40 @@ header{
 
 /* ANIMATION */
 
-.container.sign-up-mode:before {
+.contenedor.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
 }
 
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
+.contenedor.sign-up-mode .left-panel .image,
+.contenedor.sign-up-mode .left-panel .content {
   transform: translateX(-800px);
 }
 
-.container.sign-up-mode .signin-signup {
+.contenedor.sign-up-mode .signin-signup {
   left: 25%;
 }
 
-.container.sign-up-mode form.sign-up-form {
+.contenedor.sign-up-mode form.sign-up-form {
   opacity: 1;
   z-index: 2;
 }
 
-.container.sign-up-mode form.sign-in-form {
+.contenedor.sign-up-mode form.sign-in-form {
   opacity: 0;
   z-index: 1;
 }
 
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
+.contenedor.sign-up-mode .right-panel .image,
+.contenedor.sign-up-mode .right-panel .content {
   transform: translateX(0%);
 }
 
-.container.sign-up-mode .left-panel {
+.contenedor.sign-up-mode .left-panel {
   pointer-events: none;
 }
 
-.container.sign-up-mode .right-panel {
+.contenedor.sign-up-mode .right-panel {
   pointer-events: all;
 }
 
@@ -356,7 +356,7 @@ header{
   }
 
   .signin-signup,
-  .container.sign-up-mode .signin-signup {
+  .contenedor.sign-up-mode .signin-signup {
     left: 50%;
   }
 
@@ -413,7 +413,7 @@ header{
     font-size: 0.7rem;
   }
 
-  .container:before {
+  .contenedor:before {
     width: 1500px;
     height: 800px;
     transform: translateX(-50%);
@@ -424,19 +424,19 @@ header{
     transition: 2s ease-in-out;
   }
 
-  .container.sign-up-mode:before {
+  .contenedor.sign-up-mode:before {
     transform: translate(-50%, 100%);
     bottom: 25%;
     right: initial;
   }
 
-  .container.sign-up-mode .left-panel .image,
-  .container.sign-up-mode .left-panel .content {
+  .contenedor.sign-up-mode .left-panel .image,
+  .contenedor.sign-up-mode .left-panel .content {
     transform: translateY(-100px);
   }
 
-  .container.sign-up-mode .right-panel .image,
-  .container.sign-up-mode .right-panel .content {
+  .contenedor.sign-up-mode .right-panel .image,
+  .contenedor.sign-up-mode .right-panel .content {
     transform: translateY(0px);
   }
 
@@ -444,14 +444,14 @@ header{
   .right-panel .content {
     transform: translateY(100px);
   }
-  .container .panels-container{
+  .contenedor .panels-container{
     margin-top: 2rem;
   }
-  .container.sign-up-mode .signin-signup {
+  .contenedor.sign-up-mode .signin-signup {
     top: 0%;
     transform: translate(-50%, 0);
   }
-  .panels-container .container {
+  .panels-container .contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,35 +472,35 @@ header{
   .panel .left-panel{
     margin-top: 20rem;
   }
-  .container {
+  .contenedor {
     padding: 1.5rem;
   }
 
-  .container:before {
+  .contenedor:before {
     bottom: 40%;
     left: 50%;
   }
-  .container.sign-up-mode .left-panel {
+  .contenedor.sign-up-mode .left-panel {
     pointer-events: none;
   }
   
-  .container.sign-up-mode .right-panel {
+  .contenedor.sign-up-mode .right-panel {
     pointer-events: all;
   }
-  .container.sign-up-mode::before {
+  .contenedor.sign-up-mode::before {
     bottom: 30%;
     left: 50%;
   }
-  .container.sign-up-mode .panels-container .panel.left-panel{
+  .contenedor.sign-up-mode .panels-container .panel.left-panel{
     opacity: 0%;
   }
-  .container.sign-up-mode .panels-container .panel.right-panel{
+  .contenedor.sign-up-mode .panels-container .panel.right-panel{
     opacity: 100%;
   }
-    .container .panels-container .panel.right-panel{
+    .contenedor .panels-container .panel.right-panel{
         opacity: 0%;
     }
-    .container .panels-container .panel.left-panel{
+    .contenedor .panels-container .panel.left-panel{
         opacity: 100%;
       }
       

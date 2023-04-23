@@ -5,7 +5,7 @@ const validator2 = $( ".needs-validation2" );
 $(document).ready(function() {
   const sign_in_btn = $("#sign-in-btn");
   const sign_up_btn = $("#sign-up-btn");
-  const container = $(".container");
+  const container = $(".contenedor");
 
   sign_up_btn.click(function() {
     container.addClass("sign-up-mode");
