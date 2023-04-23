@@ -1,3 +1,4 @@
+
 let accordionButtons = document.querySelectorAll(".accordion-button");
 let activeContent = document.querySelector("#activeContent");
 
@@ -33,21 +34,18 @@ function closeOpenAccordions(contentId) {
     });
 }
 
-// setupAccordion();
 
-// function setupAccordion() {
+const back2Top = $('#back2Top');
 
-    
+$(window).on('scroll', function () {
+    if ($(window).scrollTop()>100){
+        back2Top.addClass('active');
+    } else {
+        back2Top.removeClass('active');
+    }
+});
+back2Top.on('click', (e) => {
+    e.preventDefault();
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+});
 
-//     let button = document.querySelector('#button-accordion-1');
-//     let content = document.querySelector("#firstContent");
-
-//     console.log(button.dataset.accordionTarget);
-
-//     button.addEventListener('click', function () {
-//         content.classList.toggle("max-h-0");
-//         content.classList.toggle("max-h-screen");
-        
-//     });
-
-// };
