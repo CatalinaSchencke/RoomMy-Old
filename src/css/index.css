@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .is-invalid{
     color:red;
 }
 .is-invalid.input-field{
     color: grey;
 }   
+
+.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
