@@ -11,7 +11,7 @@ Se utilizó **HTML5**, **CSS3**, **JS**, **Jquery** y **TailwindCSS**, como fue 
 <br>
 
 
-## Como estamos trabajando con TailwindCSS pero SIN frameworks, debe instalar los node-modules con "npm install" y correrse la siguiente línea:
+## **Como estamos trabajando con TailwindCSS pero SIN frameworks, debe instalar los node-modules con "npm install" y correrse la siguiente línea:**
       > npx tailwindcss -i ./src/css/index.css -o ./dist/output.css --watch
       
 <br>
