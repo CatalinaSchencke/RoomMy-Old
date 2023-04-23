@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
