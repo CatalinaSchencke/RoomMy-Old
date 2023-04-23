@@ -1,4 +1,4 @@
-
+// Validación de formulario de contacto
 const validator = $( ".needs-validation" );
 $(document).ready(function() {
     validator.validate( {
@@ -39,7 +39,7 @@ $(document).ready(function() {
   });
     
 
-
+// Funcionalidad de acordeón
 let accordionButtons = document.querySelectorAll(".accordion-button");
 let activeContent = document.querySelector("#activeContent");
 
@@ -75,6 +75,7 @@ function closeOpenAccordions(contentId) {
     });
 }
 
+//Funcionalidad de botón de scroll
 
 const back2Top = $('#back2Top');
 
