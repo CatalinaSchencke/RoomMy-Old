@@ -11,17 +11,18 @@ Se utilizó **HTML5**, **CSS3**, **JS**, **Jquery** y **TailwindCSS**, como fue 
 <br>
 
 
-## ** Como estamos trabajando con TailwindCSS pero SIN frameworks, debe instalar los node-modules con "npm install" y correrse la siguiente línea: **
+##  Como estamos trabajando con TailwindCSS pero SIN frameworks, debe instalar los node-modules con "npm install" y correrse la siguiente línea: 
       > npx tailwindcss -i ./src/css/index.css -o ./dist/output.css --watch
-      
-<br>
-##    ** EP2 **
-*  * index.html *:
+ <br>
+ 
+## **Entrega Parcial 2**
+
+* index.html :
    *  Se agregó funcionalidad de un botón para hacer scroll hasta arriba. 
    *  Se hizo funcional el acordeón.
    *  Se hizo verificación en el contacto
 
-*  * sign-in-up.html *:
+* sign-in-up.html :
    *  Se realizó una validación de campos de ingreso y registro.
    *  Se puede realizar un cambio entre "ingreso" y "registro" en la misma vista.
    
