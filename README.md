@@ -10,10 +10,11 @@ Los usuarios tendrán la posibilidad de conocer más sobre sus posibles roommate
 Se utilizó **HTML5**, **CSS3**, **JS**, **Jquery** y **TailwindCSS**, como fue autorizado por la profesora. 
 <br>
 
+
 ## Como estamos trabajando con TailwindCSS pero SIN frameworks, debe instalar los node-modules con "npm install" y correrse la siguiente línea:
       > npx tailwindcss -i ./src/css/index.css -o ./dist/output.css --watch
       
-
+<br>
 ## **EP2**
 *  *index.html*:
    *  Se agregó funcionalidad de un botón para hacer scroll hasta arriba. 
