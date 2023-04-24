@@ -4,7 +4,7 @@
   "description": "RoomMy es una plataforma para encontrar roommates y compartir gastos de vivienda, enfocada tanto en trabajadores con presupuesto definido como en estudiantes. \r También se pueden ofrecer habitaciones en arriendos existentes, o propiedades arrendadas exclusivamente a estudiantes/trabajadores según sus preferencias. La plataforma busca mejorar las oportunidades de las personas para acceder a estudios y trabajos, al mismo tiempo que les permite buscar roommates y lugares que se ajusten a sus preferencias, como por ejemplo un género específico donde se sientan cómodos y validados. \r Los usuarios tendrán la posibilidad de conocer más sobre sus posibles roommates y decidir si son compatibles con sus necesidades.   \r <br>\r ## **Tecnologías utilizadas**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind": "npx tailwindcss -i ./src/css/index.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
