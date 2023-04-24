@@ -795,6 +795,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-\[80\%\] {
+  margin-top: 80%;
+}
+
+.mt-\[90\%\] {
+  margin-top: 90%;
+}
+
+.mt-\[0\%\] {
+  margin-top: 0%;
+}
+
 .block {
   display: block;
 }
@@ -911,12 +923,40 @@ video {
   height: 100vh;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
 
 .max-h-\[200px\] {
   max-height: 200px;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
+
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
+
+.min-h-\[75vh\] {
+  min-height: 75vh;
+}
+
+.min-h-\[78vh\] {
+  min-height: 78vh;
 }
 
 .w-12 {
@@ -997,6 +1037,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[100vh\] {
+  width: 100vh;
 }
 
 .max-w-2xl {
@@ -1170,6 +1214,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.place-self-end {
+  place-self: end;
 }
 
 .place-self-center {
@@ -1394,11 +1442,6 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .py-1 {
@@ -1780,16 +1823,6 @@ video {
     padding-bottom: 8rem;
   }
 
-  .sm\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .sm\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1819,6 +1852,14 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-\[60\%\] {
+    margin-top: 60%;
+  }
+
+  .md\:mt-\[50\%\] {
+    margin-top: 50%;
   }
 
   .md\:block {
@@ -1919,6 +1960,26 @@ video {
     margin-top: 16rem;
   }
 
+  .lg\:mt-\[80\%\] {
+    margin-top: 80%;
+  }
+
+  .lg\:mt-\[20\%\] {
+    margin-top: 20%;
+  }
+
+  .lg\:mt-\[10\%\] {
+    margin-top: 10%;
+  }
+
+  .lg\:mt-\[0\%\] {
+    margin-top: 0%;
+  }
+
+  .lg\:mt-60 {
+    margin-top: 15rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1941,6 +2002,30 @@ video {
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:min-h-\[60vh\] {
+    min-height: 60vh;
+  }
+
+  .lg\:min-h-\[70vh\] {
+    min-height: 70vh;
+  }
+
+  .lg\:min-h-\[65vh\] {
+    min-height: 65vh;
+  }
+
+  .lg\:min-h-\[68vh\] {
+    min-height: 68vh;
+  }
+
+  .lg\:min-h-\[66vh\] {
+    min-height: 66vh;
+  }
+
+  .lg\:min-h-\[67vh\] {
+    min-height: 67vh;
   }
 
   .lg\:w-\[150px\] {
